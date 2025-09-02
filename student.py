@@ -1,8 +1,19 @@
-# Leia uma linha com o número do cartão
-numero = input()
-
-# TODO: implemente a verificação pelo algoritmo de Luhn
-# Siga as dicas do README.
-
-# Ao final, imprima exatamente:
-# print("Cartão válido")  ou  print("Cartão inválido")
+num = imput()
+num1 = [int(x) for x in str(num)]
+num1.reverse
+par = []
+impar = []
+par = num1[::2]
+impar = num1[1::2]
+imparf = sum(impar)
+for i in range (len(par)):
+  g = par*2
+  if g > 9:
+    g -= 9
+  par[i]=g
+parf=sum(g)
+valido=parf + imparf
+if valido % 10 == 0:
+  print("Cartão válido")
+else:
+  print("Cartão inválido")
