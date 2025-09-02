@@ -1,6 +1,6 @@
 num = input()
 num1 = [int(x) for x in str(num)]
-num1.reverse
+num1.reverse()
 par = []
 impar = []
 par = num1[::2]
@@ -11,7 +11,7 @@ for i in range (len(impar)):
   g = impar[i]*2
   if g > 9:
     g -= 9
-    impar[i]=g
+    impar[i]+=g
   impar[i]=imparf
 valido=sum(imparf) + parf
 if valido % 10 == 0:
