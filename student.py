@@ -5,13 +5,13 @@ par = []
 impar = []
 par = num1[::2]
 impar = num1[1::2]
-imparf = sum(impar)
-parf = []
-for i in range (len(par)):
+parf = sum(par)
+imparf = []
+for i in range (len(impar)):
   g = par[i]*2
   if g > 9:
     g -= 9
-    par[i]=g
+    impar[i]=g
   par[i]=parf
 valido=sum(parf) + imparf
 if valido % 10 == 0:
