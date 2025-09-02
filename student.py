@@ -1,5 +1,5 @@
 num = imput()
-num1 = [int(x) for x in str(num]
+num1 = [int(x) for x in str(num)]
 num1.reverse
 par = []
 impar = []
