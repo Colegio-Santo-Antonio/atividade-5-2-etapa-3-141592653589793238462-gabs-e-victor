@@ -7,7 +7,7 @@ par = num1[::2]
 impar = num1[1::2]
 imparf = sum(impar)
 for i in range (len(par)):
-  g = par*2
+  g = par[i]*2
   if g > 9:
     g -= 9
   par[i]=g
