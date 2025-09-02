@@ -14,6 +14,6 @@ for i in range (len(par)):
 parf=sum(g)
 valido=parf + imparf
 if valido % 10 == 0:
-  print(Cartão válido)
+  print("Cartão válido")
 else:
-  print(Cartão inválido)
+  print("Cartão inválido")
