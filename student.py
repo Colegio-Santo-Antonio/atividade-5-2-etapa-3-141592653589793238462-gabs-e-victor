@@ -11,7 +11,7 @@ for i in range (len(par)):
   if g > 9:
     g -= 9
   par[i]=g
-parf=sum(int(j) for j in g)
+parf=sum(g)
 valido=parf + imparf
 if valido % 10 == 0:
   print("Cartão válido")
